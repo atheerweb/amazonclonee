@@ -1,12 +1,28 @@
+// global styles
+.deleviery__location {
+  display: flex;
+  flex-direction: column;
+  color: #d3d3d3;
+  b {
+    color: white;
+    font-size: 1.1rem;
+  }
+}
+
 nav {
-  background-color: black;
-  width: 100vw;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+  z-index: 3;
+  background-color: var(--primary-color);
+  width: 100%;
   padding: 0 2em;
   height: 5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
+  position: sticky;
   .deleviery__location__wrapper {
     display: flex;
     #mark__icon {
@@ -16,10 +32,10 @@ nav {
   }
 
   img {
-    width: 6em;
+    width: 9em;
   }
   .search__bar {
-    width: 57em;
+    width: 50em;
     background-color: white;
     height: 3em;
     display: flex;
@@ -38,7 +54,7 @@ nav {
       color: rgb(63, 63, 63);
     }
     .search__icon {
-      background-color: #98fe69;
+      background-color: var(--secondary-color);
       width: 4em;
       height: 3em;
       border-radius: 0 0.5em 0.5em 0;
@@ -52,7 +68,7 @@ nav {
   }
   .shopping__cart__wrapper {
     #items__counter {
-      color: #98fe69;
+      color: var(--secondary-color);
       position: relative;
       left: 0.6em;
     }
@@ -62,23 +78,11 @@ nav {
       bottom: 0.4em;
     }
   }
-}
-
-#locations {
-  background-image: url("../imgs/usa.webp");
-  border: none;
-  width: 3em;
-  height: 2em;
-  background-size: cover;
-}
-
-// global styles
-.deleviery__location {
-  display: flex;
-  flex-direction: column;
-  color: #d3d3d3;
-  b {
-    color: white;
-    font-size: 1.1rem;
+  #locations {
+    background-image: url("../imgs/usa.webp");
+    border: none;
+    width: 3em;
+    height: 2em;
+    background-size: cover;
   }
 }

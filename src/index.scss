@@ -6,6 +6,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--background);
 }
 
+//color palette
+:root {
+  --primary-color: #17182c;
+  --secondary-color: #2cf1cc;
+  --secondary-color-text: #21b89d;
+  --background: #eaeded;
+}
+.arrow__container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 10em;
+  .arrow__wrapper {
+    height: 10em;
+    width: fit-content;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+    .arrow {
+      width: 3.5em;
+      opacity: 0.87;
+    }
+  }
+}
+#slider__arrow {
+  bottom: 33em;
+}
+#productCarsouel__arrow {
+  bottom: 13em;
+}
+#ps {
+  width: 4em;
+  height: 7em;
+}
+.psarrow {
+  width: 2em;
+  pointer-events: none;
+}
+#active {
+  border: 4px solid var(--primary-color);
+  border-radius: 5px;
+}
+.left {
+  background-color: white;
+  box-shadow: 7px 0px 3px rgba(0, 0, 0, 0.2);
+}
+.right {
+  background-color: white;
+  box-shadow: -7px 0px 3px rgba(0, 0, 0, 0.2);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}

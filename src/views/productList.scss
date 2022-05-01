@@ -1,0 +1,47 @@
+.productList__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .productList {
+    margin-top: 2em;
+    flex: 7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    .border {
+        margin-top: 0.5em;
+      width: 0.1em;
+      background-color: lightgray;
+      height: 37em;
+    }
+  }
+}
+
+#filters {
+  margin-top: 1.5em;
+  padding: 0 2em;
+  flex: 1;
+}
+.p_title {
+  margin: 1em 0 0 1em;
+  font-size: 0.9rem;
+}
+.computers__cats__item {
+  margin: 0.3em 0 0 1.5em;
+  list-style: none;
+  font-size: 0.9rem;
+}
+.ratings {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+
+  .reviews {
+    display: flex;
+    margin: 0.3em 0 0 1em;
+    img {
+      margin-right: 0.3em;
+      width: 1em;
+    }
+  }
+}

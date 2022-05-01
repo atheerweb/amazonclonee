@@ -1,12 +1,12 @@
-import "./header.scss";
+import "./nav.scss";
 import mark from "../imgs/marker.svg";
 import search from "../imgs/search.svg";
 import cart from "../imgs/cart.svg";
-
+import logo from "../imgs/logo.png";
 const Nav = () => {
   return (
     <nav>
-      <h1>B-watch</h1>
+      <img src={logo} alt="" />
       <div className="deleviery__location__wrapper">
         <img src={mark} alt="" id="mark__icon" />
         <p className="deleviery__location">
@@ -32,7 +32,7 @@ const Nav = () => {
       </p>
       <div className="shopping__cart__wrapper">
         <h3 id="items__counter">0</h3>
-      <img src={cart} alt="" id="shopping__cart" />
+        <img src={cart} alt="" id="shopping__cart" />
       </div>
     </nav>
   );

@@ -1,0 +1,128 @@
+.home__container {
+  max-width: 1500px;
+  margin: auto;
+  overflow-x: hidden;
+}
+.slider__wrapper {
+  position: relative;
+  height: 38em;
+  width: 100%;
+  margin-bottom: -22em;
+  z-index: 1;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 65%,
+    rgba(0, 0, 0, 0)
+  );
+}
+//header styles
+header {
+  max-width: 1500px;
+  margin: auto;
+  .slider {
+    background-size: cover;
+    width: 100%;
+  }
+}
+// products styles
+.products__container {
+  position: relative;
+  max-width: 1500px;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .products {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    aside {
+      display: flex;
+      flex-direction: column;
+      width: 21em;
+      height: 23em;
+      margin: 0 0.7em;
+      .signin__popup {
+        width: 100%;
+        height: 9.5em;
+        background-color: white;
+        padding: 2em;
+        .signin__button {
+          background-color: var(--secondary-color);
+          border: none;
+          padding: 0.5em 1em;
+          width: 100%;
+          border-radius: 0.5em;
+          margin-top: 1em;
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+      }
+      .ad {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 1em;
+        #ad__img {
+          height: 87%;
+          background-size: cover;
+        }
+      }
+    }
+    #see__more {
+      position: relative;
+      top: 0.5em;
+    }
+    .shop__more {
+      text-decoration: none;
+      color: var(--secondary-color-text);
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+        color: var(--primary-color);
+      }
+    }
+    .product {
+      padding: 1.5em;
+      width: 21em;
+      height: 23em;
+      margin: 0 0.7em;
+      background-color: white;
+      .img__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 83%;
+        .cat__img {
+          width: 12em;
+        }
+      }
+      .product__title {
+        font-size: 1.35rem;
+        margin-bottom: 1em;
+      }
+      .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .item {
+          width: 50%;
+          height: 50%;
+          padding: 0.5em;
+          .item__img {
+            width: 9em;
+          }
+          p {
+            font-size: 0.88rem;
+            font-weight: bold;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

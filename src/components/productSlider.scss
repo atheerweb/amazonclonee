@@ -1,0 +1,17 @@
+.productSlider__wrapper {
+  background-color: white;
+  width: 97%;
+  height: 17em;
+  margin: 2em auto 0 auto;
+  padding: 1.5em;
+  .productsCarsouel__wrapper {
+    display: flex;
+    width: 90vw;
+    overflow-x: auto;
+    height: 95%;
+    
+  }
+  h3 {
+    font-size: 1.35rem;
+  }
+}
